@@ -1,8 +1,10 @@
 namespace TutorialCS
 {
-    public abstract partial class Vehicle
+    public abstract partial class Vehicle : IMoveable
     {
         internal readonly string _name;
+
+        public string NameVehicle => _name;
 
         public Vehicle(string name)
         {

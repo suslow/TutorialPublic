@@ -6,16 +6,15 @@ namespace TutorialCS
     {
         static void Main(string[] args)
         {   
-            var bmw = new Car("Bmw",200, new OilEngine());
-            System.Console.WriteLine("BMW");
-            bmw.Init();
+            var player = new Man();
 
-            
+            var bmw1 = new Car("BMW1", 120, new Engine());
+            var bmw2 = new Car("BMW2", 120, new Engine());
+            var horse = new Horse() {Name = "Horse"};
 
-            var teslaEngine = new ElectricEngine();
-            var tesla = new Car("Tesla",200, teslaEngine);
-            System.Console.WriteLine("TESLA");
-            tesla.Init();
+            player.MoveFromAtoB(bmw1);
+            player.MoveFromAtoB(bmw2);
+            player.MoveFromAtoB(horse);
         }
     }
 }
