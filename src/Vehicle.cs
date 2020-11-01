@@ -28,8 +28,8 @@ namespace TutorialCS
             System.Console.WriteLine("Close Lock");
         }
 
-        private  void StopEngine()
-        {   
+        private void StopEngine()
+        {
             System.Console.WriteLine("Stop Engine");
         }
 
@@ -40,7 +40,7 @@ namespace TutorialCS
 
         public virtual void StartEngine()
         {
-            
+            System.Console.WriteLine("Start Engine");
         }
 
         private void OpenLock()

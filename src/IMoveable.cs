@@ -2,7 +2,7 @@ namespace TutorialCS
 {
     public interface IMoveable
     {
-        string NameVehicle { get;}
+        string NameVehicle { get; }
         void Move();
     }
 }

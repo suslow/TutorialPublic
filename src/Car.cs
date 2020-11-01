@@ -2,10 +2,9 @@ namespace TutorialCS
 {
     public class Car : Vehicle
     {
-        public Engine EngineBase {get; set;}
+        public Engine EngineBase { get; set; }
 
-        public Car(string name, int maxSpeed, Engine engine)
-        : base(name)
+        public Car(string name, int maxSpeed, Engine engine) : base(name)
         {
             // _name = name;
             this.MaxSpeed = maxSpeed;
@@ -32,15 +31,11 @@ namespace TutorialCS
             }
         }
 
-        // public void Move () {
-        //     System.Console.WriteLine ("Машина едет");
-        // }
-
         internal void GetInfo()
         {
             System.Console.WriteLine(_name);
         }
-    
+
         public override void StartEngine()
         {
             EngineBase.Start();
